@@ -54,7 +54,7 @@ class CompaniesLiniearAdapter(val clickListeter: CompanyListener) :
                 .placeholder(R.drawable.ic_image_place_holder)
                 .placeholder(R.drawable.ic_broken_image)
                 .into(binding.img)
-            binding.root.setOnClickListener { clickListeter }
+            binding.root.setOnClickListener { clickListener }
         }
     }
 }

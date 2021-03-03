@@ -64,8 +64,7 @@ class ApiModule {
         return NetworkInterceptor()
     }
     @Provides
-    fun okHttpClient(loggingInterceptor: HttpLoggingInterceptor,
-                     networkInterceptor: NetworkInterceptor  ): OkHttpClient {
+    fun okHttpClient(loggingInterceptor: HttpLoggingInterceptor): OkHttpClient {
         return OkHttpClient.Builder()
             .connectTimeout(120, TimeUnit.SECONDS)
             .readTimeout(120, TimeUnit.SECONDS)

@@ -6,9 +6,6 @@ import com.example.directorycompanies.App
 import com.example.directorycompanies.R
 import com.example.directorycompanies.databinding.ActivityMainBinding
 import com.example.directorycompanies.di.modules.view.ViewComponent
-import com.github.terrakok.cicerone.NavigatorHolder
-import com.github.terrakok.cicerone.Router
-import com.github.terrakok.cicerone.androidx.AppNavigator
 import timber.log.Timber
 import javax.inject.Inject
 

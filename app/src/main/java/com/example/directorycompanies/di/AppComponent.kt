@@ -20,8 +20,7 @@ import javax.inject.Singleton
 interface AppComponent {
     @Component.Factory
     interface Factory {
-        fun create(@BindsInstance applicationContext: Context,
-                    ): AppComponent
+        fun create(@BindsInstance applicationContext: Context): AppComponent
     }
     fun viewComponent(): ViewComponent.Factory
     fun inject(application: App)

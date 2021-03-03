@@ -21,9 +21,9 @@ class CompanyRepository @Inject constructor(val api: ApiService) {
                 .filter{!it.isOnError}
                 .dematerialize { data->data}
     }
-    fun downloadInfoCompanyById(id: String): Single<CompanyDetail> {
+    fun downloadInfoCompanyById(id: Int): Single<CompanyDetail> {
         Timber.i("listenChange run");
-        return api.getCompanyDetail(id)
+        return api.getCompanyDetail(id.toString())
     }
 }
 
